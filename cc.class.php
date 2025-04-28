@@ -49,8 +49,8 @@ class CC
     protected function generateYears()
     {
         $randMonth = rand(1, 12);
-        $randYears = rand(20, 25);
-        $randCvv = rand(010, 800);
+        $randYears = rand(25, 50);
+        $randCvv = rand(000, 999);
         $randMonth < 10 ? $randMonth = "0" . $randMonth : $randMonth = $randMonth;
         $randCvv < 100 ? $randCvv = "0" . $randCvv : $randCvv = $randCvv;
         return "|" . $randMonth . "|20" . $randYears . "|" . $randCvv;
